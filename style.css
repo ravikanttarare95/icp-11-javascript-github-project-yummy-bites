@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background: #d74e09;
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.brand-name-container a {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  margin-right: 10px;
+  width: 35px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+}
+
+.nav-items-container {
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.nav-login-container {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-icon {
+  margin-right: 7px;
+}
+
+.hamburger-menu {
+  font-size: 1.5rem;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .nav-items-container {
+    display: none;
+  }
+
+  .nav-login-container {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
