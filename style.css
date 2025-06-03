@@ -49,11 +49,36 @@ nav {
   font-size: 1rem;
 }
 
+.nav-items {
+  position: relative;
+}
+
+.nav-items:hover::after {
+  width: 100%;
+}
+
+.nav-items::after {
+  width: 0%;
+  border-bottom: 2px solid #ffffff;
+  content: "";
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item-selected {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+}
+
 .nav-login-container {
   display: flex;
   align-items: center;
   font-size: 1rem;
   cursor: pointer;
+  width: 75px;
 }
 
 .login-icon {
