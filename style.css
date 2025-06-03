@@ -5,12 +5,11 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
   background: #d74e09;
-  font-weight: bold;
 }
 
 .nav-container {
@@ -38,7 +37,9 @@ nav {
 }
 
 .brand-name {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
 }
 
 .nav-items-container {
