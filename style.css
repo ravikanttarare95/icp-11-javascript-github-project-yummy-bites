@@ -135,6 +135,95 @@ nav {
   justify-content: space-between;
 }
 
+.footer {
+            background-color: #F2BB05;
+            color: #124E78;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .footer-section {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .header-third {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #124E78;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+            margin-left: 75px;
+            text-align: left;
+            width: max-content;
+        }
+
+        .list-footer {
+            margin: 8px 0;
+        }
+
+        .list-footer a {
+            color: #124E78;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .list-footer a:hover {
+            color: #124E78;
+            font-weight: bold;
+        }
+
+        .social-icons a {
+            font-size: 1.5em;
+            color: #124E78;
+            margin: 0 10px;
+            display: inline-block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        .footer-bottom p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: #124E78;
+        }
+
+        .contact-link:hover {
+            color: #124E78;
+            font-weight: bold;
+        }
+
 @media (max-width: 992px) {
   .nav-items-container {
     display: none;
