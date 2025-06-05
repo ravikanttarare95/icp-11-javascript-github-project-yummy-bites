@@ -18,10 +18,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
+  color: #6e0e0a;
 }
 
 .order-main-img-container {
-  width: 350px;
+  width: 400px;
 }
 
 .eating-img {
@@ -30,7 +32,38 @@
 }
 
 .order-form {
-  width: 400px;
+  max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  box-shadow: 1px 5px 20px rgb(110, 14, 10, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+}
+
+.order-input-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.order-input-section label {
+  font-weight: bold;
+}
+
+.order-input-section input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #6e0e0a;
+}
+
+.order-input-section textarea {
+  padding: 7px 15px;
+  line-height: 3;
+  border-radius: 5px;
+  border: 1px solid #6e0e0a;
+  max-width: 100%;
 }

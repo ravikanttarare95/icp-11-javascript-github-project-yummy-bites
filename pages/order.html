@@ -53,20 +53,29 @@
             <img src="./../images/photos/eating.jpg" alt="Eating Food" class="eating-img">
         </div>
         <form class="order-form">
-            <label for="fullName">Full Name <span class="required-sign">*</span></label>
-            <input type="text" id="fullName" required>
-
-            <label for="mobileNumber">Mobile Number <span class="required-sign">*</span></label>
-            <input type="number" id="mobileNumber" required>
-
-            <label for="deliveryAddress">Delivery Address <span class="required-sign">*</span></label>
-            <textarea name="deliveryAddress" id="deliveryAddress"></textarea>
-
-            <label for="deliveryTime">Delivery Time <span class="required-sign">*</span></label>
-            <input type="time" id="deliveryTime" required>
+            <div class="order-input-section">
+                <label for="fullName">Full Name <span class="required-sign">*</span></label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div class="order-input-section">
+                <label for="mobileNumber">Mobile Number <span class="required-sign">*</span></label>
+                <input type="number" id="mobileNumber" required>
+            </div>
+            <div class="order-input-section">
+                <label for="deliveryAddress">Delivery Address <span class="required-sign">*</span></label>
+                <textarea name="deliveryAddress" id="deliveryAddress"></textarea>
+            </div>
+            <div class="order-input-section">
+                <label for="deliveryPin">Pin Code <span class="required-sign">*</span></label>
+                <input name="deliveryPin" id="deliveryPin" required>
+            </div>
+            <div class="order-input-section">
+                <label for="deliveryTime">Delivery Time <span class="required-sign">*</span></label>
+                <input type="time" id="deliveryTime" required>
+            </div>
 
             <button>Place Order</button>
-            </form>
+        </form>
     </div>
 
     <footer class="footer">
