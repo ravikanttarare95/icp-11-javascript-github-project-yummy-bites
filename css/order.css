@@ -1,9 +1,14 @@
-.order-cart-container {
+.order-container {
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .order-cart-item {
-  margin-bottom: 20px;
+  max-width: 100%;
+  margin: 15px auto;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #d8d8d8;
@@ -16,9 +21,8 @@
 
 .order-form-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
   color: #6e0e0a;
 }
 
@@ -40,7 +44,7 @@
   box-shadow: 1px 5px 20px rgb(110, 14, 10, 0.2);
   border-radius: 10px;
   padding: 30px;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .order-input-section {
@@ -76,9 +80,18 @@
     width: 300px;
     margin: 20px;
   }
+
+  .order-cart-item {
+    max-width: 600px;
+    margin: 20px auto;
+  }
 }
 
 @media (max-width: 400px) {
+  .order-container {
+    padding: 10px;
+  }
+
   .order-form {
     padding: 20px;
   }
