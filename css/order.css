@@ -36,6 +36,7 @@
 .eating-img {
   width: 100%;
   display: block;
+  filter: drop-shadow(0 15px 10px #ccc);
 }
 
 .order-form {
