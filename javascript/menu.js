@@ -54,7 +54,7 @@ const MenuCard = menuItems.forEach((element) => {
   </div>
   `;
 });
-let orderCartContainer = document.getElementById("order-cart-container");
+// const orderCartContainer = document.getElementById("order-cart-container");
 menuCardsContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn-add")) {
     const card = e.target.closest(".menu-card");
