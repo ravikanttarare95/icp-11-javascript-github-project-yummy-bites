@@ -160,7 +160,7 @@ nav {
 }
 
 .footer-section {
-  width: 250px;
+  width: 200px;
   margin-bottom: 20px;
 }
 
@@ -179,7 +179,7 @@ nav {
 .list {
   list-style: none;
   padding: 0;
-  margin-left: 75px;
+  margin-left: 65px;
   text-align: left;
   width: max-content;
 }
@@ -213,8 +213,7 @@ nav {
 }
 
 .footer-bottom {
-  padding: 15px 0;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .footer-bottom p {
@@ -225,11 +224,19 @@ nav {
 .contact-link {
   text-decoration: none;
   color: #124e78;
+  display: flex;
+  text-align: left;
+  gap: 4px;
+  font-size: 15px;
+  margin-left: 40px;
+  line-height: 1.4;
 }
 
-.contact-link:hover {
-  color: #124e78;
-  font-weight: bold;
+.contact-link i {
+  font-size: 16px;
+  width: 20px; 
+  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 992px) {
@@ -265,7 +272,22 @@ nav {
     padding: 5px 0;
   }
 
+  .contact-link {
+    margin-left: 80px;
+    text-align: center;
+  }
+
   .social-icons a {
     margin: 0 8px;
+  }
+}
+@media (min-width: 312px)  and (max-width: 800px){
+  .list{
+    margin-left: 280px;
+    text-align: center;
+  }
+  .contact-link {
+    margin-left: 280px;
+    text-align: center;
   }
 }
