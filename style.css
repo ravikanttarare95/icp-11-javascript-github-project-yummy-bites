@@ -244,4 +244,28 @@ nav {
   .hamburger-menu {
     display: block;
   }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .list {
+    margin-left: 80px;
+    text-align: center;
+  }
+
+  .list-footer a {
+    padding: 5px 0;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
 }
