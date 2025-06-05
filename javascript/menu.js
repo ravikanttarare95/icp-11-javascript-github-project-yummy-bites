@@ -39,18 +39,34 @@ const menuItems = [
   },
 ];
 
-const renderMenuCards = menuItems.forEach((element) => {
+const MenuCard = menuItems.forEach((element) => {
   menuCardsContainer.innerHTML += `
-  <div class="menu-card">
- <img src="${element.itemImageURL}" alt="Item's Image" class="menu-card-image">
-        <div class="menu-card-content">
-            <h3 class="menu-card-heading">${element.itemTitle}</h3>
-            <p class="item-desc">${element.itemDesc}</p>
-            <div class="price-btn-container">
-                <p class="item-price">${element.itemPrice}</p>
-                <button>Add</button>
-            </div>
-        </div>
-</div>
-`;
+    <div class="menu-card">
+  <img src="${element.itemImageURL}" alt="Item's Image" class="menu-card-image">
+          <div class="menu-card-content">
+              <h3 class="menu-card-heading">${element.itemTitle}</h3>
+              <p class="item-desc">${element.itemDesc}</p>
+              <div class="price-btn-container">
+                  <p class="item-price">${element.itemPrice}</p>
+                  <button class="btn-add">Add</button>
+              </div>
+          </div>
+  </div>
+  `;
+});
+let orderCartContainer = document.getElementById("order-cart-container");
+menuCardsContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn-add")) {
+    const card = e.target.closest(".menu-card");
+    const itemName = card.querySelector(".menu-card-heading").textContent;
+    const price = card.querySelector(".item-price").textContent;
+    const cartItem = { itemName, price };
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push(cartItem);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(`${itemName} added to cart!`);
+  }
 });
