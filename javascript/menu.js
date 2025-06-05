@@ -32,7 +32,7 @@ const menuItems = [
     itemPrice: "₹100",
   },
   {
-       itemImageURL: "./../images/photos/jeera-rice-and-daal.jpeg",
+    itemImageURL: "./../images/photos/jeera-rice-and-daal.jpeg",
     itemTitle: "Jeera Rice & Dal Tadka",
     itemDesc: "Fragrant cumin rice with tempered dal",
     itemPrice: "₹90",
@@ -43,10 +43,9 @@ const renderMenuCards = menuItems.forEach((element) => {
   menuCardsContainer.innerHTML += `
   <div class="menu-card">
  <img src="${element.itemImageURL}" alt="Item's Image" class="menu-card-image">
-         <div class="menu-card-devider"></div>
         <div class="menu-card-content">
             <h3 class="menu-card-heading">${element.itemTitle}</h3>
-            <p>${element.itemDesc}</p>
+            <p class="item-desc">${element.itemDesc}</p>
             <div class="price-btn-container">
                 <p class="item-price">${element.itemPrice}</p>
                 <button>Add</button>
