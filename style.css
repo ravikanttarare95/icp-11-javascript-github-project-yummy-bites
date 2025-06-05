@@ -144,30 +144,60 @@ nav {
 /*FOOTER*/
 
 .footer {
-  background-color: #f2bb05;
-  color: #124e78;
-  padding: 40px 0;
+  background-color: #d74e09;
+  color: #fff;
+  padding: 20px;
   text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
+  justify-content: space-between;
 }
 
 .footer-section {
-  width: 250px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #fff;
+}
+
+.footer-section:nth-child(1) {
+  max-width: 400px;
+  text-align: start;
+  align-items: start;
+}
+
+.footer-section:nth-child(2) {
+  width: 150px;
+}
+
+.footer-section:nth-child(3) {
+  width: 200px;
+}
+
+.footer-section:nth-child(4) {
+  width: 300px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
 }
 
 .header-third {
   font-size: 1.3em;
   margin-bottom: 15px;
-  color: #124e78;
 }
 
 .footer-section p,
@@ -179,7 +209,6 @@ nav {
 .list {
   list-style: none;
   padding: 0;
-  margin-left: 75px;
   text-align: left;
   width: max-content;
 }
@@ -189,23 +218,21 @@ nav {
 }
 
 .list-footer a {
-  color: #124e78;
   text-decoration: none;
   display: block;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .list-footer a:hover {
-  color: #124e78;
-  font-weight: bold;
+  color: #dbdbdb;
+  transform: scale(1.1);
 }
 
 .social-icons a {
   font-size: 1.5em;
-  color: #124e78;
   margin: 0 10px;
   display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
@@ -213,23 +240,34 @@ nav {
 }
 
 .footer-bottom {
-  padding: 15px 0;
-  margin-top: 20px;
-}
-
-.footer-bottom p {
-  font-size: 16px;
-  margin: 0;
+  margin-top: 10px;
 }
 
 .contact-link {
-  text-decoration: none;
-  color: #124e78;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact-link:hover {
-  color: #124e78;
-  font-weight: bold;
+  color: #dbdbdb;
+}
+
+@media (max-width: 1110px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section:nth-child(1) {
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    margin: 0 auto 15px;
+  }
+
+  .footer-section:nth-child(4) {
+    width: 190px;
+  }
 }
 
 @media (max-width: 992px) {
