@@ -1,3 +1,7 @@
+body {
+  background-color: #ffffeb;
+}
+
 .menu-cards-container {
   max-width: 1100px;
   padding: 1.5rem;
@@ -10,4 +14,9 @@
 
 .menu-card {
   width: 100%;
+}
+
+.menu-card-image {
+  height: 220px;
+  object-fit: cover;
 }

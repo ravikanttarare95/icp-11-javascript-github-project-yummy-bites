@@ -98,13 +98,14 @@ nav {
   border-radius: 20px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgb(204, 204, 204, 0.4);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(204, 204, 204, 0.7);
+  transition: all 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .menu-card:hover {
-  box-shadow: 0 5px 15px rgb(204, 204, 204, 0.7);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgb(215, 78, 9, 0.2);
 }
 
 .menu-card-image {
