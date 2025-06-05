@@ -245,3 +245,9 @@ nav {
     display: block;
   }
 }
+
+@media (max-width: 400px) {
+  .brand-name {
+    font-size: 1.9rem;
+  }
+}

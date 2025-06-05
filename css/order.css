@@ -67,3 +67,22 @@
   border: 1px solid #6e0e0a;
   max-width: 100%;
 }
+
+@media (max-width: 992px) {
+  .order-form-container {
+    flex-direction: column;
+  }
+  .order-main-img-container {
+    width: 300px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .order-form {
+    padding: 20px;
+  }
+  .order-main-img-container {
+    width: 250px;
+  }
+}
