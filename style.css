@@ -281,19 +281,4 @@ nav {
     margin: 0 8px;
   }
 }
-@media (min-width: 312px) and (max-width: 800px) {
-  .list {
-    margin-left: 280px;
-    text-align: center;
-  }
-  .contact-link {
-    margin-left: 280px;
-    text-align: center;
-  }
-}
 
-@media (max-width: 400px) {
-  .brand-name {
-    font-size: 1.9rem;
-  }
-}
