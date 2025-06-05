@@ -9,3 +9,28 @@
   border: 1px solid #d8d8d8;
   background: #f0f0c9;
 }
+
+.required-sign {
+  color: red;
+}
+
+.order-form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order-main-img-container {
+  width: 350px;
+}
+
+.eating-img {
+  width: 100%;
+  display: block;
+}
+
+.order-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
