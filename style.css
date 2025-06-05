@@ -179,7 +179,7 @@ nav {
 .list {
   list-style: none;
   padding: 0;
-  margin-left: 65px;
+  margin-left: 75px;
   text-align: left;
   width: max-content;
 }
@@ -213,7 +213,8 @@ nav {
 }
 
 .footer-bottom {
-  margin-top: 5px;
+  padding: 15px 0;
+  margin-top: 20px;
 }
 
 .footer-bottom p {
@@ -224,19 +225,11 @@ nav {
 .contact-link {
   text-decoration: none;
   color: #124e78;
-  display: flex;
-  text-align: left;
-  gap: 4px;
-  font-size: 15px;
-  margin-left: 40px;
-  line-height: 1.4;
 }
 
-.contact-link i {
-  font-size: 16px;
-  width: 20px;
-  text-align: center;
-  text-align: left;
+.contact-link:hover {
+  color: #124e78;
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
@@ -251,34 +244,10 @@ nav {
   .hamburger-menu {
     display: block;
   }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-section {
-    width: 90%;
-    margin-bottom: 30px;
-  }
-
-  .list {
-    margin-left: 80px;
-    text-align: center;
-  }
-
-  .list-footer a {
-    padding: 5px 0;
-  }
-
-  .contact-link {
-    margin-left: 80px;
-    text-align: center;
-  }
-
-  .social-icons a {
-    margin: 0 8px;
-  }
 }
 
+@media (max-width: 400px) {
+  .brand-name {
+    font-size: 1.9rem;
+  }
+}
