@@ -153,7 +153,7 @@ form label {
 }
 @media (min-width: 100px) and (max-width: 900px) {
   #review-form {
-    width: 380px;
+    width: 100%;
     margin: 20px auto;
   }
 
