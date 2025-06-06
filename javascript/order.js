@@ -7,7 +7,14 @@ if (cart.length === 0) {
   cart.forEach((element) => {
     orderCartContainer.innerHTML += `
     <div class="order-cart-item">
-<p><strong>${element.itemName} - ${element.price}</strong></p>
+            <p class="cart-item-name"><strong>${element.itemName}</strong></p> 
+            <div class="inc-dec-container">
+                <button class="btn-inc-dec" id="minus">-</button>   
+                <p id="quantity">Q</p>   
+                <button class="btn-inc-dec" id="plus">+</button>
+            </div> 
+             <p class="cart-item-price"><strong>${element.price}</strong></p>
+             <img src="../images/icons/delete.png" id="delete-icon" alt="Delete Icon" width="30px" height="30px"/> 
     </div>`;
   });
 }
