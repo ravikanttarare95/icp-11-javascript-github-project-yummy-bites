@@ -14,6 +14,7 @@ if (cart.length === 0) {
                 <button class="btn-inc-dec" id="plus">+</button>
             </div> 
              <p class="cart-item-price"><strong>${element.price}</strong></p>
+             <img src="../images/icons/delete.png" id="delete-icon" alt="Delete Icon" width="30px" height="30px"/> 
     </div>`;
   });
 }
