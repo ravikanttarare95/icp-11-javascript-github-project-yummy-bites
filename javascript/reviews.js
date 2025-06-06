@@ -20,9 +20,29 @@ const form = document.getElementById("review-form");
     }
 
     let reviews = JSON.parse(localStorage.getItem("tiffinReviews")) || [
-      { reviewer: "Shravani", meal: "Lunch", rating: 5, comment: "Delicious and healthy!" },
-      { reviewer: "Sneha", meal: "Breakfast", rating: 4, comment: "Great taste, on time!" },
-      { reviewer: "Soham", meal: "Dinner", rating: 3, comment: "Okay, needs improvement." }
+      { 
+        reviewer: "Prerna Sharma", 
+        meal: "Lunch", rating: 5, 
+        comment: "Delicious and healthy!Perfect homemade feel. Dal and sabzi tasted like mom's cooking!" 
+      },
+      { 
+        reviewer: "Sneha Patil", 
+        meal: "Breakfast", 
+        rating: 4, 
+        comment: "Highly professional service. Food is tasty, hygienic, and always on time. Perfect solution for my daily tiffin needs!" 
+      },
+      { 
+        reviewer: "Soham Raskar", 
+        meal: "Dinner", 
+        rating: 5, 
+        comment: "Perfect for busy professionals. Highly recommended for anyone missing homemade meals during work or study." 
+      },
+      { 
+        reviewer: "Omkar Dongare", 
+        meal: "Dinner", 
+        rating: 3, 
+        comment: "Okay, needs improvement." 
+      }
     ];
 
     function saveToLocalStorage() {
