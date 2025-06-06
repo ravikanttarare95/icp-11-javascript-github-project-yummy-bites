@@ -65,14 +65,18 @@ const form = document.getElementById("review-form");
           starsHtml += `<img src="${i < review.rating ? '../images/icons/shine-star.png' : '../images/icons/star.png'}" class="stars-img" style="width:20px;">`;
         }
 
+        const defaultProfile = "../images/icons/review-profile.png"; 
+
         card.innerHTML = `
+          <div class="profile-wrapper">
+            <img src="${defaultProfile}" alt="Profile" class="profile-icon"/>
+          </div>
           <h3>${review.reviewer}</h3>
           <p>${review.comment}</p>
           <p><strong>Meal: </strong> ${review.meal}</p>
           <p>${starsHtml}</p>
-          
         `;
-        container.appendChild(card);
+        document.getElementById("review-container").innerHTML += card.outerHTML;
       });
     }
 
