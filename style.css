@@ -17,7 +17,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   flex-wrap: wrap;
 }
 
@@ -134,9 +134,11 @@ nav {
 
 .menu-card-content {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
+  gap: 10px;
   padding: 20px;
 }
 
