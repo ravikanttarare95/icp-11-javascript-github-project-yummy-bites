@@ -90,7 +90,7 @@ form label {
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 16px;
-  background-color: #eaf3f7;
+  background-color: #f9f9f9; 
   border: 1px solid #ccc;
   border-color: #d74e09;
 }
@@ -153,12 +153,24 @@ form label {
 }
 @media (min-width: 100px) and (max-width: 900px) {
   #review-form {
-    width: 250px;
+    width: 100%;
     margin: 20px auto;
+  }
+
+  .review-form-header{
+    font-size: 14px;
+  }
+
+  .review-icon {
+  height: 30px;
   }
 
   .stars-img {
     width: 13%;
     margin: 2px;
+  }
+
+  #review-container{
+    margin: 20px;
   }
 }
