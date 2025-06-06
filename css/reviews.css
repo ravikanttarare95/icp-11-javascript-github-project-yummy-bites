@@ -157,6 +157,14 @@ form label {
     margin: 20px auto;
   }
 
+  .review-form-header{
+    font-size: 14px;
+  }
+
+  .review-icon {
+  height: 30px;
+  }
+
   .stars-img {
     width: 13%;
     margin: 2px;
