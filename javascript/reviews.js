@@ -59,7 +59,6 @@ const form = document.getElementById("review-form");
         const card = document.createElement("div");
         card.className = "review-card";
 
-        // Create stars HTML
         let starsHtml = "";
         for (let i = 0; i < 5; i++) {
           starsHtml += `<img src="${i < review.rating ? '../images/icons/shine-star.png' : '../images/icons/star.png'}" class="stars-img" style="width:20px;">`;
@@ -98,7 +97,7 @@ const form = document.getElementById("review-form");
       saveToLocalStorage();
       form.reset();
       selectedRating = 0;
-      glowstar(0); // Reset stars
+      shiningstar(0); 
       renderReviews();
     });
 
