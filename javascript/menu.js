@@ -48,7 +48,7 @@ const MenuCard = menuItems.forEach((element) => {
               <p class="item-desc">${element.itemDesc}</p>
               <div class="price-btn-container">
                   <p class="item-price">${element.itemPrice}</p>
-                  <button class="btn-add">Add</button>
+                  <button class="btn btn-primary">Add</button>
               </div>
           </div>
   </div>
