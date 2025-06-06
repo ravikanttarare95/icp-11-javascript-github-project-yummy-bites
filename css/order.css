@@ -12,7 +12,7 @@
   padding: 10px 5px 10px 15px;
   border-radius: 5px;
   border: 1px solid #d8d8d8;
-  background: #f0f0c9;
+  background: #f4f4d7;
 }
 
 .order-cart-item {
@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
+  color: #124e78;
 }
 
 .cart-item-name {
@@ -31,6 +32,7 @@
   width: 100px;
   justify-content: space-between;
   margin: 0 15px;
+  color: #000;
 }
 
 .btn-inc-dec {
@@ -39,7 +41,7 @@
   border-radius: 3px;
   height: 20px;
   width: 20px;
-  border: 1px solid black;
+  border: 1px solid #000;
   cursor: pointer;
   display: flex;
   justify-content: center;
