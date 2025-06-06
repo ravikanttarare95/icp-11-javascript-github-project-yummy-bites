@@ -1,4 +1,4 @@
-const orderCartContainer = document.getElementById("order-cart-container");
+const orderCartContainer = document.querySelector(".order-cart-container");
 const cart = JSON.parse(localStorage.getItem("cart"));
 
 if (cart.length === 0) {
@@ -9,25 +9,31 @@ if (cart.length === 0) {
     <div class="order-cart-item">
             <p class="cart-item-name"><strong>${element.itemName}</strong></p> 
             <div class="inc-dec-container">
-                <button class="btn-inc-dec" id="minus" onclick="dec()">-</button>   
-                <p id="quantity">1</p>   
-                <button class="btn-inc-dec" id="plus" onclick="inc()">+</button>
+                <button class="btn-inc-dec minus">-</button>   
+                <p class="quantity">1</p>   
+                <button class="btn-inc-dec plus">+</button>
             </div> 
              <p class="cart-item-price"><strong>${element.price}</strong></p>
-             <img src="../images/icons/delete.png" id="delete-icon" alt="Delete Icon"/> 
+             <img src="../images/icons/delete.png" class="delete-icon" alt="Delete Icon"/> 
     </div>`;
   });
 }
 
-let itemQuantity = document.getElementById("quantity");
-
-function inc() {
-  itemQuantity.innerText = parseInt(itemQuantity.innerText) + 1;
-}
-
-function dec() {
-  if (itemQuantity.innerText == 1) {
-    return alert("Quantity cannot be 0");
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("plus")) {
+    const closestItem = e.target.closest(".order-cart-item");
+    const quantityElement = closestItem.querySelector(".quantity");
+    quantityElement.innerText = parseInt(quantityElement.innerText) + 1;
+    updatePrice(closestItem);
   }
-  itemQuantity.innerText = parseInt(itemQuantity.innerText) - 1;
-}
+
+  if (e.target.classList.contains("minus")) {
+    const closestItem = e.target.closest(".order-cart-item");
+    const quantityElement = closestItem.querySelector(".quantity");
+    if (quantityElement.innerText == 1) {
+      return alert("Quantity cannot be 0");
+    }
+    quantityElement.innerText = parseInt(quantityElement.innerText) - 1;
+    updatePrice(closestItem);
+  }
+});
