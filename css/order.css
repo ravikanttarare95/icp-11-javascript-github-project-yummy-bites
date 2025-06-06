@@ -54,9 +54,9 @@
   margin-right: 5px;
 }
 
-#delete-icon {
-  width: 30px;
-  height: 30px;
+.delete-icon {
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   display: block;
 }
@@ -138,6 +138,11 @@
     max-width: 600px;
     margin: 20px auto;
   }
+
+  .delete-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -154,5 +159,10 @@
   }
   .order-main-img-container {
     width: 250px;
+  }
+
+  .delete-icon {
+    width: 30px;
+    height: 30px;
   }
 }
