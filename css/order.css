@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-#order-cart-container {
+.order-cart-container {
   width: 100%;
   margin: 15px auto;
   padding: 10px 5px 10px 15px;
@@ -61,7 +61,7 @@
   display: block;
 }
 
-#delete-icon:hover {
+.delete-icon:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);
   filter: drop-shadow(0 0 1px red);
@@ -134,7 +134,7 @@
     margin: 20px;
   }
 
-  #order-cart-container {
+  .order-cart-container {
     max-width: 600px;
     margin: 20px auto;
   }
@@ -146,11 +146,7 @@
 }
 
 @media (max-width: 400px) {
-  .order-container {
-    padding: 10px;
-  }
-
-  #order-cart-container {
+  .order-cart-container {
     font-size: small;
   }
 
