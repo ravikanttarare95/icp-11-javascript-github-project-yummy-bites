@@ -1,11 +1,12 @@
 const orderCartContainer = document.querySelector(".order-cart-container");
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-if (cart.length === 0) {
-  orderCartContainer.innerHTML = "<p>Your cart is empty.</p>";
-} else {
-  cart.forEach((element) => {
-    orderCartContainer.innerHTML += `
+function loadCartFromLocalStorage() {
+  if (cart.length === 0) {
+    orderCartContainer.innerHTML = "<p>Your cart is empty.</p>";
+  } else {
+    cart.forEach((element, index) => {
+      orderCartContainer.innerHTML += `
     <div class="order-cart-item">
             <p class="cart-item-name"><strong>${element.itemName}</strong></p> 
             <div class="inc-dec-container">
@@ -14,10 +15,13 @@ if (cart.length === 0) {
                 <button class="btn-inc-dec plus">+</button>
             </div> 
              <p class="cart-item-price"><strong class="item-price-cart" data-base-price="${element.price}">₹${element.price}</strong></p>
-             <img src="../images/icons/delete.png" class="delete-icon" alt="Delete Icon"/> 
+             <img src="../images/icons/delete.png" class="delete-icon" data-index="${index}" alt="Delete Icon"/> 
     </div>`;
-  });
+    });
+  }
 }
+
+loadCartFromLocalStorage();
 
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("plus")) {
@@ -35,6 +39,16 @@ document.addEventListener("click", (e) => {
     }
     quantityElement.innerText = parseInt(quantityElement.innerText) - 1;
     updatePrice(closestItem);
+  }
+
+  if (e.target.classList.contains("delete-icon")) {
+    const closestItem = e.target.closest(".order-cart-item");
+    const deleteElement = closestItem.querySelector(".delete-icon");
+    const dataIndex = deleteElement.dataset.index;
+    cart.splice(dataIndex, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    orderCartContainer.innerHTML = "";
+    loadCartFromLocalStorage();
   }
 });
 
