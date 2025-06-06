@@ -52,6 +52,18 @@
   margin-right: 5px;
 }
 
+#delete-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: block;
+}
+
+#delete-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 1px red);
+}
+
 .required-sign {
   color: red;
 }
