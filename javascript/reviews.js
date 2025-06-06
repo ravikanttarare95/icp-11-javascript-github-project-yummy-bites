@@ -93,6 +93,7 @@ const form = document.getElementById("review-form");
         comment: document.getElementById("comment").value
       };
 
+      alert("Thank you!! Your review has been submitted!");
       reviews.push(newReview);
       saveToLocalStorage();
       form.reset();
@@ -103,3 +104,4 @@ const form = document.getElementById("review-form");
 
     filterSelect.addEventListener("change", renderReviews);
     renderReviews();
+    
