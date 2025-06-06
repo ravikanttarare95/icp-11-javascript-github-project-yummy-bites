@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/reviews.css">
     <script src="https://kit.fontawesome.com/c79d0518fa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -36,6 +44,52 @@
         </div>
     </nav>
 
+    <div class="review-main-container">
+  <form id="review-form">
+    <h2 class="review-form-header">Add Tiffin Review</h2>
+
+    <label for="reviewer">Name:</label>
+    <input type="text" id="reviewer" class="name-input" required>
+
+    <label for="meal-type">Meal Type:</label>
+    <select id="meal-type" class="meal-review">
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+    </select>
+
+    <label>Rating:</label>
+    <div class="star-rating">
+      <div class="star-img-container">
+        <img class="stars-img" id="star-1-img" src="../images/icons/star.png" onclick="shiningstar(1)">
+        <img class="stars-img" id="star-2-img" src="../images/icons/star.png" onclick="shiningstar(2)">
+        <img class="stars-img" id="star-3-img" src="../images/icons/star.png" onclick="shiningstar(3)">
+        <img class="stars-img" id="star-4-img" src="../images/icons/star.png" onclick="shiningstar(4)">
+        <img class="stars-img" id="star-5-img" src="../images/icons/star.png" onclick="shiningstar(5)">
+      </div>
+    </div>
+
+    <label for="comment">Comment:</label>
+    <textarea id="comment" rows="3" class="meal-review" required></textarea>
+
+    <button type="submit">Submit Review</button>
+  </form>
+  <img src="../images/photos/review-img.png" class="main-img">
+  </div>
+
+  <div>
+    <label for="filter-select"><strong>Filter by Meal:</strong></label>
+    <select id="filter-select">
+      <option value="All">All</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+    </select>
+  </div>
+
+  <h2 class="sub-heading">Customer Reviews</h2>
+  <div id="review-container"></div>
+    
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
@@ -86,5 +140,6 @@
             <p>©2025 Yummy-Bites. All rights reserved.</p>
         </div>
     </footer>
+    <script src="../javascript/reviews.js"></script>
 </body>
 </html>

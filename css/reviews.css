@@ -1,0 +1,122 @@
+.review-main-container {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  padding: 40px;
+  flex-wrap: wrap; 
+}
+
+#review-form {
+  width: 380px;
+  margin: 40px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 4px 8px 20px #ccc;
+  margin-left: 180px;
+}
+
+.review-form-header {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #124E78;
+}
+
+form label {
+  font-weight: 600;
+  display: block;
+  margin: 12px 0 6px;
+  color: #D74E09;
+}
+
+.name-input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.meal-review {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.star-rating {
+  display: flex;
+  font-size: 15px;
+  margin: 10px 0;
+  color: #ccc;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.stars-img {
+  width: 15%;
+  filter: drop-shadow(1px 1px 1px #102e50);
+}
+
+.main-img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 35px;
+}
+
+#filter-select {
+  margin: 10px auto;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #eaf3f7;
+  border: 1px solid #ccc;
+}
+
+.sub-heading {
+  text-align: center;
+  color: #124E78;
+}
+
+#review-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px #f1e7db, -5px -5px 15px #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #D74E09;
+}
+
+.review-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 100px) and (max-width: 900px) {
+  #review-form {
+  width: 250px;
+  margin: 20px auto;
+  }
+}
