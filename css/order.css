@@ -146,10 +146,6 @@
 }
 
 @media (max-width: 400px) {
-  .order-container {
-    padding: 10px;
-  }
-
   .order-cart-container {
     font-size: small;
   }
