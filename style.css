@@ -171,6 +171,15 @@ nav {
   border-bottom: 2px solid #fff;
 }
 
+.footer-section:nth-child(1) h3 {
+  font-size: 2rem;
+  border: none;
+}
+
+.header-third {
+  font-family: "Quicksand", sans-serif;
+}
+
 .footer-section:nth-child(1) {
   max-width: 400px;
   text-align: start;
