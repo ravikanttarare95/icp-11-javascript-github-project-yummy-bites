@@ -47,16 +47,27 @@ nav {
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.3s ease-in-out;
+  border: none;
 }
 
 .btn-primary {
   background: #1e81c8;
   color: #fff;
-  border: none;
 }
 
 .btn-primary:hover {
   background: #124e78;
+}
+
+.btn-secondary {
+  background: #25d366;
+  color: #fff;
+  box-shadow: 1px 2px 3px #bebebe;
+}
+
+.btn-secondary:hover {
+  background: #0f8339;
+  color: #fff;
 }
 
 .brand-name {
@@ -171,12 +182,12 @@ nav {
 }
 
 .menu-card-heading {
-  color: #6e0e0a;
+  color: #bb1711;
   font-size: 1.3rem;
 }
 
 .item-desc {
-  color: #460907;
+  color: #a3140f;
 }
 
 .item-price {

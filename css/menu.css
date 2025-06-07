@@ -2,6 +2,12 @@ body {
   background-color: #ffffeb;
 }
 
+.btn-order-menu {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+}
+
 .menu-cards-container {
   max-width: 1100px;
   padding: 1.5rem;
@@ -32,10 +38,10 @@ select {
   background-color: #ffffff;
   padding: 8px 12px;
   margin-left: 10px;
-  border: 1px solid #6e0e0a;
+  border: 1px solid #a3140f;
   border-radius: 10px;
   font-size: 0.9rem;
-  color: #6e0e0a;
+  color: #a3140f;
 }
 
 @media (min-width: 601px) and (max-width: 910px) {
