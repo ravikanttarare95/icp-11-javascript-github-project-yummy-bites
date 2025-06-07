@@ -75,6 +75,30 @@
   margin: 10px 20px;
   color: #bb1711;
 }
+.empty-cart-heading {
+  font-size: 1.2rem;
+  color: red;
+  font-weight: bold;
+}
+
+.empty-cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.empty-cart img {
+  width: 250px;
+}
+
+.empty-cart p {
+  width: 400px;
+  font-size: 2rem;
+  color: #25d366;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
 
 .required-sign {
   color: red;
@@ -152,6 +176,19 @@
     width: 32px;
     height: 32px;
   }
+
+  .empty-cart-heading {
+    font-size: 1rem;
+  }
+
+  .empty-cart img {
+    width: 180px;
+  }
+
+  .empty-cart p {
+    width: 400px;
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -173,5 +210,18 @@
 
   .cart-total-container {
     font-size: 1rem;
+  }
+
+  .empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .empty-cart p {
+    width: 100%;
+    font-size: 1.2rem;
+    padding-right: 10px;
   }
 }
