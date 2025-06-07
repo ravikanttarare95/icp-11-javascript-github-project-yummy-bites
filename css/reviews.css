@@ -10,6 +10,7 @@
   width: 450px;
   margin: 40px;
   padding: 25px;
+  padding-right: 0%;
   background: #ffffff;
   border-radius: 15px;
   box-shadow: 4px 8px 20px #ccc;
@@ -33,7 +34,7 @@
 form label {
   font-weight: 600;
   display: block;
-  margin: 12px 0 6px;
+  margin: 6px;
   color: #d74e09;
 }
 
@@ -79,6 +80,10 @@ form label {
   max-width: 100%;
   height: auto;
   margin-top: 70px;
+}
+
+.btn {
+  width: 90%;
 }
 
 .filter-select-name {

@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Reviews</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../css/reviews.css" />
-    <script
-      src="https://kit.fontawesome.com/c79d0518fa.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../css/reviews.css"/>
+    <script src="https://kit.fontawesome.com/c79d0518fa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <!-- Open Sans -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"/>
     <!-- Quicksand -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"/>
   </head>
   <body>
     <nav>
       <div class="nav-container">
         <div class="brand-name-container">
           <a href="./../index.html">
-            <img
-              src="./../images/icons/brand-logo.png"
-              alt="Brand Logo"
-              class="brand-logo"
-            />
+            <img src="./../images/icons/brand-logo.png" alt="Brand Logo" class="brand-logo"/>
             <p class="brand-name">Yummy Bites</p>
           </a>
         </div>
@@ -58,10 +47,7 @@
         </li>
         <div class="nav-login-container">
           <a href="./pages/login.html" class="nav-items">
-            <i
-              class="fa-solid fa-arrow-right-to-bracket login-icon"
-              style="color: #ffffff"
-            ></i>
+            <i class="fa-solid fa-arrow-right-to-bracket login-icon" style="color: #ffffff"></i>
             Login
           </a>
         </div>
@@ -69,17 +55,18 @@
           <i class="fa-solid fa-bars" style="color: #ffffff"></i>
         </div>
       </div>
+      <div class="hidden-nav-items-container"></div>
     </nav>
 
     <div class="review-main-container">
       <form id="review-form">
         <h2 class="review-form-header">
-          <img src="../images/icons/review-icon.png" class="review-icon" />
+          <img src="../images/icons/review-icon.png" class="review-icon"/>
           Add Review
         </h2>
 
         <label for="reviewer">Name:</label>
-        <input type="text" id="reviewer" class="name-input" required />
+        <input type="text" id="reviewer" class="name-input" required/>
 
         <label for="meal-type">Meal Type:</label>
         <select id="meal-type" class="meal-review">
@@ -91,51 +78,24 @@
         <label>Rating:</label>
         <div class="star-rating">
           <div class="star-img-container">
-            <img
-              class="stars-img"
-              id="star-1-img"
-              src="../images/icons/star.png"
-              onclick="shiningstar(1)"
-            />
-            <img
-              class="stars-img"
-              id="star-2-img"
-              src="../images/icons/star.png"
-              onclick="shiningstar(2)"
-            />
-            <img
-              class="stars-img"
-              id="star-3-img"
-              src="../images/icons/star.png"
-              onclick="shiningstar(3)"
-            />
-            <img
-              class="stars-img"
-              id="star-4-img"
-              src="../images/icons/star.png"
-              onclick="shiningstar(4)"
-            />
-            <img
-              class="stars-img"
-              id="star-5-img"
-              src="../images/icons/star.png"
-              onclick="shiningstar(5)"
-            />
+            <img class="stars-img" id="star-1-img" src="../images/icons/star.png" onclick="shiningstar(1)"/>
+            <img class="stars-img" id="star-2-img" src="../images/icons/star.png" onclick="shiningstar(2)"/>
+            <img class="stars-img" id="star-3-img" src="../images/icons/star.png" onclick="shiningstar(3)"/>
+            <img class="stars-img" id="star-4-img" src="../images/icons/star.png" onclick="shiningstar(4)"/>
+            <img class="stars-img" id="star-5-img" src="../images/icons/star.png" onclick="shiningstar(5)"/>
           </div>
         </div>
 
         <label for="comment">Comment:</label>
         <textarea id="comment" rows="3" class="meal-review" required></textarea>
 
-        <button type="submit">Submit Review</button>
+        <button type="submit" class="btn btn-primary">Submit Review</button>
       </form>
       <img src="../images/photos/review-img.png" class="main-img" />
     </div>
 
     <div>
-      <label for="filter-select" class="filter-select-name"
-        ><strong>Filter by Meal:</strong></label
-      >
+      <label for="filter-select" class="filter-select-name"><strong>Filter by Meal:</strong></label>
       <select id="filter-select">
         <option value="All">All</option>
         <option value="Breakfast">Breakfast</option>
@@ -151,10 +111,7 @@
       <div class="footer-container">
         <div class="footer-section">
           <h3 class="header-third">
-            <img
-              src="../images/icons/brand-logo.png"
-              style="height: 40px; vertical-align: bottom"
-            />
+            <img src="../images/icons/brand-logo.png" style="height: 40px; vertical-align: bottom"/>
             Yummy Bites
           </h3>
           <p>
@@ -174,63 +131,64 @@
               >
             </li>
             <li class="list-footer">
-              <a href="#"
-                ><i class="fa-solid fa-arrow-right fa-sm"></i>&nbsp;&nbsp;About
-                Us</a
-              >
+              <a href="./about-us.html">
+                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                &nbsp;&nbsp;About Us</a>
             </li>
             <li class="list-footer">
-              <a href="./menu.html"
-                ><i class="fa-solid fa-arrow-right fa-sm"></i
-                >&nbsp;&nbsp;Menu</a
-              >
+              <a href="./menu.html">
+                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                &nbsp;&nbsp;Menu</a>
             </li>
             <li class="list-footer">
-              <a href="./order.html"
-                ><i class="fa-solid fa-arrow-right fa-sm"></i
-                >&nbsp;&nbsp;Order</a
-              >
+              <a href="./order.html">
+                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                &nbsp;&nbsp;Order</a>
             </li>
             <li class="list-footer">
-              <a href="./reviews.html"
-                ><i class="fa-solid fa-arrow-right fa-sm"></i
-                >&nbsp;&nbsp;Review</a
-              >
+              <a href="./reviews.html">
+                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                &nbsp;&nbsp;Review</a>
             </li>
             <li class="list-footer">
-              <a href="#"
-                ><i class="fa-solid fa-arrow-right fa-sm"></i
-                >&nbsp;&nbsp;Contact</a
-              >
+              <a href="#">
+                <i class="fa-solid fa-arrow-right fa-sm"></i>
+                &nbsp;&nbsp;Contact</a>
             </li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h3 class="header-third">Follow Us</h3>
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
+                <h3 class="header-third">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ravikant.tarare.1" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ravikant_tarare" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/TarareRavikant" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@roadtocode4u" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+              </div>
+            </div>
 
         <div class="footer-section">
           <h3 class="header-third">Contact Us</h3>
           <a href="tel:9834023208" class="contact-link">
-            <i class="fa-solid fa-phone-volume"></i>&nbsp;9834023208 </a
-          ><br /><br />
+            <i class="fa-solid fa-phone-volume"></i>&nbsp;9834023208 </a>
+            <br/><br/>
           <a href="mailto:shravanikuldharan05@gmail.com" class="contact-link">
-            <i class="fa-solid fa-envelope"></i>&nbsp;shravanik@gmail.com </a
-          ><br /><br />
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Neeraj+Decor"
-            target="_blank"
-            class="contact-link"
-          >
-            <i class="fa-solid fa-location-dot"></i>&nbsp; Near Kekiz Shop,<br />Nagar-Manmad
-            Road, Ahmednagar
+            <i class="fa-solid fa-envelope"></i>&nbsp;shravanik@gmail.com </a>
+            <br/><br/>
+          <a href="https://www.google.com/maps/search/?api=1&query=Neeraj+Decor"
+            target="_blank" class="contact-link">
+            <i class="fa-solid fa-location-dot"></i>
+            &nbsp; Near Kekiz Shop,
+            <br/>Nagar-Manmad Road, Ahmednagar
           </a>
         </div>
       </div>
@@ -239,5 +197,6 @@
       </div>
     </footer>
     <script src="../javascript/reviews.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
