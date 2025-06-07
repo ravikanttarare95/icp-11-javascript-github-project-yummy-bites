@@ -21,8 +21,8 @@ Welcome to **Yummy Bites** — a responsive and interactive food ordering websit
 
 - **HTML5**
 - **CSS3**
-- **JavaScript (ES6)**
-- **Local Storage API**
+- **JavaScript**
+- **Local Storage**
 - **Vercel** for deployment
 
 ## Contributors:
