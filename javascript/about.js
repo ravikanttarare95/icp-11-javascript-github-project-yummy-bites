@@ -28,5 +28,17 @@ const taglines = [
   const randomIndex = Math.floor(Math.random() * taglines.length);
   document.getElementById("about-tagline").textContent = taglines[randomIndex];
 
-  showSlide(); 
+showSlide(); 
 setInterval(showSlide, 3000); 
+
+let cards = document.getElementsByClassName('mission-card');
+
+for (let i = 0; i < cards.length; i++) {
+  cards[i].onclick = function() {
+    if (this.className.includes('expanded')) {
+      this.className = this.className.replace('expanded', '').trim();
+    } else {
+      this.className += ' expanded';
+    }
+  };
+}
