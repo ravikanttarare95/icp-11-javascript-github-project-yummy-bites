@@ -2,6 +2,12 @@ body {
   background-color: #ffffeb;
 }
 
+.btn-order-menu {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+}
+
 .menu-cards-container {
   max-width: 1100px;
   padding: 1.5rem;
