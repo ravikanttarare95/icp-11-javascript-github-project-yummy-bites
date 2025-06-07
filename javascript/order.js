@@ -10,7 +10,7 @@ function loadCartFromLocalStorage() {
     <p class="empty-cart-heading">Your cart is empty.</p>
     <div class="empty-cart">    
             <img src="./../images/photos/empty-cart.png" alt="Empty Cart"/>
-            <p>Grab a bite of something mouthwatering</P>
+            <p>Grab a bite of something Mouthwatering</P>
     </div>
     `;
 
