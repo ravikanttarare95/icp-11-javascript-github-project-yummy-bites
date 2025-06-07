@@ -322,8 +322,8 @@ nav {
 
 #top-arrow {
   position: fixed;
-  bottom: 0;
-  left: 47%;
+  bottom: 30px;
+  right: 20px;
   width: 50px;
   filter: brightness(1) invert(1) drop-shadow(0 0 5px #000);
   opacity: 0.7;
