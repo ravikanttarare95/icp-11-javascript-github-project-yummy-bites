@@ -2,9 +2,17 @@ body {
   background-color: #ffffeb;
 }
 
+.menu-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  color: #d74e09;
+}
+
 .btn-order-menu {
   position: fixed;
-  bottom: 45%;
+  top: 36%;
   right: 10px;
   text-decoration: none;
   z-index: 999;
@@ -31,7 +39,7 @@ body {
 }
 
 .filter-container {
-  margin: 30px 0 30px 24px;
+  margin:20px 15px;
   font-weight: bold;
   color: #6e0e0a;
   font-size: 1rem;
@@ -67,5 +75,11 @@ select {
     right: 5px;
     font-size: 0.8rem;
     padding: 5px 8px;
+  }
+
+  select {
+    padding: 5px 8px;
+    margin-left: 7px;
+    font-size: 0.8rem;
   }
 }

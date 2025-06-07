@@ -145,7 +145,7 @@ nav {
 
 .nav-items-hidden a {
   text-decoration: none;
-  color: #6e0e0a;
+  color: #d74e09;
 }
 
 /* Card */
@@ -181,12 +181,12 @@ nav {
 }
 
 .menu-card-heading {
-  color: #bb1711;
+  color: #d74e09;
   font-size: 1.3rem;
 }
 
 .item-desc {
-  color: #a3140f;
+  color: #d74e09;
 }
 
 .item-price {
