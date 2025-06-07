@@ -76,9 +76,19 @@ function updatePrice(closestItem) {
 
   if (!isNaN(quantity) && !isNaN(basePrice)) {
     priceElement.innerText = `₹${basePrice * quantity}`;
+    updateCartTotal();
   } else {
     console.error("Invalid quantity or base price");
   }
+}
+
+function updateCartTotal() {
+  let total = 0;
+  const priceElements = document.querySelectorAll(".item-price-cart");
+  priceElements.forEach((el) => {
+    total += parseInt(el.innerText.replace("₹", ""));
+  });
+  document.getElementById("cart-total").innerText = total;
 }
 
 const btnOrderPlaced = document.querySelector(".btn-place-order");
