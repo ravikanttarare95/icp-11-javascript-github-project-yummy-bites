@@ -61,13 +61,12 @@ nav {
 
 .btn-secondary {
   background: #25d366;
-  color: #fff;
+  color: #000;
   box-shadow: 1px 2px 3px #bebebe;
 }
 
 .btn-secondary:hover {
   background: #19aa4e;
-  color: #fff;
 }
 
 .brand-name {

@@ -4,9 +4,11 @@ body {
 
 .btn-order-menu {
   position: fixed;
-  top: 100px;
-  right: 20px;
+  bottom: 45%;
+  right: 10px;
   text-decoration: none;
+  z-index: 999;
+  opacity: 0.5;
 }
 
 .menu-cards-container {
@@ -49,10 +51,21 @@ select {
   .menu-cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .btn-order-menu {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
 }
 
 @media (max-width: 600px) {
   .menu-cards-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn-order-menu {
+    right: 5px;
+    font-size: 0.8rem;
+    padding: 5px 8px;
   }
 }
