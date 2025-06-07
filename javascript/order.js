@@ -80,3 +80,22 @@ function updatePrice(closestItem) {
     console.error("Invalid quantity or base price");
   }
 }
+
+const btnOrderPlaced = document.querySelector(".btn-place-order");
+const greetingMessage = document.querySelector(".order-greetings");
+
+btnOrderPlaced.addEventListener("click", () => {
+  const orderInputFields = document.querySelectorAll(".order-input-fields");
+
+  let isEmpty = false;
+  orderInputFields.forEach((input) => {
+    if (!input.value.trim()) {
+      isEmpty = true;
+    }
+  });
+
+  if (isEmpty) return alert("Fill in all fields!");
+  greetingMessage.style.color = "#25D366";
+  greetingMessage.innerText =
+    "Thank you! Your order has been received. We will contact you shortly.";
+});

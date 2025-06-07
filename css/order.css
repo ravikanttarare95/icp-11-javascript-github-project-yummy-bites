@@ -158,6 +158,10 @@
   max-width: 100%;
 }
 
+.order-greetings {
+  text-align: center;
+}
+
 @media (max-width: 992px) {
   .order-form-container {
     flex-direction: column;
