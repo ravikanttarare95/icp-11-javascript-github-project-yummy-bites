@@ -39,15 +39,21 @@ width:600px; }
     width:350px;
     border:none;
     background:white;
-    margin-right:20px;
+    margin-left:20px;
+    border-radius:20px;
+    margin-top:15px;
+    margin-bottom:20px;
+    box-shadow: 1px 5px 20px rgb(110, 14, 10, 0.2);
     
 }
 
 .container {
     display:flex;
-    margin-left:280px;
+    margin-left:20px;
     margin-top:10px;
     margin-bottom:10px;
+    justify-content:center;
+    flex-direction:row;
 }
 .card-headline {
     font-size:20px;
