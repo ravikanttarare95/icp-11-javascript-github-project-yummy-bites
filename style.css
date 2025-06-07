@@ -61,13 +61,12 @@ nav {
 
 .btn-secondary {
   background: #25d366;
-  color: #fff;
+  color: #000;
   box-shadow: 1px 2px 3px #bebebe;
 }
 
 .btn-secondary:hover {
   background: #19aa4e;
-  color: #fff;
 }
 
 .brand-name {
@@ -319,6 +318,17 @@ nav {
 
 .contact-link:hover {
   color: #dbdbdb;
+}
+
+#top-arrow {
+  position: fixed;
+  bottom: 0;
+  left: 47%;
+  width: 50px;
+  filter: brightness(1) invert(1) drop-shadow(0 0 5px #000);
+  opacity: 0.7;
+  cursor: pointer;
+  display: none;
 }
 
 @media (max-width: 1110px) {

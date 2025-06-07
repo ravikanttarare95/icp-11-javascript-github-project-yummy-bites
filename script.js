@@ -4,9 +4,9 @@ const hiddenNavItemsContaier = document.querySelector(
 hamburgerMenu = document
   .querySelector(".hamburger-menu")
   .addEventListener("click", () => {
-    if ((hiddenNavItemsContaier.style.display === "none")) {
+    if (hiddenNavItemsContaier.style.display === "none") {
       hiddenNavItemsContaier.style.display = "block";
-    } else{
+    } else {
       hiddenNavItemsContaier.style.display = "none";
     }
     hiddenNavItemsContaier.innerHTML = `
@@ -21,3 +21,20 @@ hamburgerMenu = document
           </div>
     `;
   });
+
+const scrollTop = document.getElementById("top-arrow");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollTop.style.display = "block";
+  } else {
+    scrollTop.style.display = "none";
+  }
+});
+
+scrollTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

@@ -28,3 +28,44 @@ width:600px; }
     text-decoration:none;
     color:white;
 }
+.card-img {
+    height:70px;
+    margin:10px 130px;
+    
+
+}
+.card {
+    height:200px;
+    width:350px;
+    border:none;
+    background:white;
+    margin-right:20px;
+    
+}
+
+.container {
+    display:flex;
+    margin-left:280px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.card-headline {
+    font-size:20px;
+    font-weight: bold;
+    text-align:center;
+}
+.main-line {
+    text-align:center;
+    margin-top:20px;
+}
+.description {
+    
+    text-align:center;
+}
+body {
+  background-color: #ffffeb;
+}
+@media (max-width: 768px) {
+    .card {
+        width:100%;
+    } }
