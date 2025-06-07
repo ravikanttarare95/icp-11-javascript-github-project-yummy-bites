@@ -2,10 +2,17 @@ const orderCartContainer = document.querySelector(".order-cart-container");
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function loadCartFromLocalStorage() {
+  let total = 0;
+  orderCartContainer.innerHTML = "";
+
   if (cart.length === 0) {
     orderCartContainer.innerHTML = "<p>Your cart is empty.</p>";
+
+    document.getElementById("cart-total").innerText = "0";
   } else {
     cart.forEach((element, index) => {
+      total += parseInt(element.price);
+
       orderCartContainer.innerHTML += `
     <div class="order-cart-item">
             <p class="cart-item-name"><strong>${element.itemName}</strong></p> 
@@ -18,6 +25,8 @@ function loadCartFromLocalStorage() {
              <img src="../images/icons/delete.png" class="delete-icon" data-index="${index}" alt="Delete Icon"/> 
     </div>`;
     });
+
+    document.getElementById("cart-total").innerText = total;
   }
 }
 
