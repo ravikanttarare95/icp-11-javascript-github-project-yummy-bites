@@ -1,0 +1,30 @@
+.main-heading {
+    margin-top:150px;
+    margin-left:150px;
+    
+    font-size:30px;
+    
+}
+.plate-img {
+    height:400px;
+    margin-left:100px;
+margin-top:20px;
+margin-bottom:30px;
+width:600px; }
+
+.main-container {
+    display:flex;
+    
+}
+.btn {
+    background-color:#D74E09;
+    color:white;
+    padding:10px;
+    border:none;
+    
+
+}
+.order-link {
+    text-decoration:none;
+    color:white;
+}

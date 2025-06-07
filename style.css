@@ -14,6 +14,7 @@ nav {
   top: 0;
   z-index: 1000;
   box-shadow: 0 1px 10px rgb(215, 78, 9, 0.4);
+  padding: 20px;
 }
 
 .nav-container {
@@ -21,7 +22,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 20px;
   flex-wrap: wrap;
 }
 
@@ -114,6 +114,30 @@ nav {
   display: none;
 }
 
+.hidden-nav-items-conatiner {
+  max-width: 940px;
+  display: flex;
+  background: #f4f4d7;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px;
+  display: none;
+}
+
+.nav-items-hidden {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.nav-items-hidden a {
+  text-decoration: none;
+  color: #6e0e0a;
+}
+
 /* Card */
 
 .menu-card {
@@ -121,14 +145,14 @@ nav {
   border-radius: 20px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(204, 204, 204, 0.7);
+  box-shadow: 5px 5px 15px rgb(102, 102, 102, 0.3);
   transition: all 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .menu-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgb(215, 78, 9, 0.2);
+  box-shadow: 5px 5px 20px rgb(215, 78, 9, 0.2);
 }
 
 .menu-card-image {
@@ -156,7 +180,7 @@ nav {
 }
 
 .item-price {
-  color: #6e0e0a;
+  color: #1e81c8;
   font-size: 1.2rem;
   font-weight: bold;
 }
