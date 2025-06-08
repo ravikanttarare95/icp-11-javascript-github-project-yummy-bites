@@ -17,6 +17,8 @@ Welcome to **Yummy Bites** — a responsive and interactive food ordering websit
 - 📱 Fully responsive design for mobile and desktop
 - 🔍 Scroll-to-top button and clean navigation
 
+![Menu Page](./images/photos/readme-1.png)
+
 ## 🛠️ Tech Stack
 
 - **HTML5**

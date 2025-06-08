@@ -2,7 +2,7 @@ const menuCardsContainer = document.getElementById("menu-cards-container");
 
 const menuItems = [
   {
-    itemImageURL: "./../images/photos/veg-thali.jpg",
+    itemImageURL: "./../images/photos/veg-thali.jpeg",
     itemTitle: "Veg Thali",
     category: "veg",
     itemDesc: "Rice, dal, sabzi, roti, salad & dessert",

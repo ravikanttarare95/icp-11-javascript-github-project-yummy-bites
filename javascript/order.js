@@ -108,4 +108,6 @@ btnOrderPlaced.addEventListener("click", () => {
   greetingMessage.style.color = "#25D366";
   greetingMessage.innerText =
     "Thank you! Your order has been received. We will contact you shortly.";
+  const orderCartItem = document.querySelector(".order-cart-item");
+  orderCartItem.innerText = "";
 });
