@@ -110,7 +110,7 @@
 }
 
 .mission-card {
-  background: #ffffeb;
+  background: #fff;
   border-radius: 15px;
   width: 220px;
   padding: 20px;
@@ -173,7 +173,7 @@
   display: flex;
   align-items: center;
   border-radius: 18px;
-  background-color: #ffffeb;
+  background-color: #fff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   padding: 24px;
   gap: 24px;
@@ -194,7 +194,7 @@
   background-color: #fff;
   padding: 8px;
   object-fit: contain;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
 
 .faq-text-content {

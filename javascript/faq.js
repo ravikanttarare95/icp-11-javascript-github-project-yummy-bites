@@ -44,45 +44,28 @@ const faqs = [
 const faqContainer = document.getElementById("faq-container");
 
 faqs.forEach(faq => {
-  const item = document.createElement("div");
-  item.className = "faq-item";
-  item.style.marginBottom = "19px";
-  item.style.padding = "15px";
-  item.style.backgroundColor = "#ffffff";
-  item.style.borderRadius = "8px";
-  item.style.boxShadow = "0 2px 5px #ccc";
-
-  const question = document.createElement("div");
-  question.className = "faq-question";
-  question.textContent = faq.question;
-  question.style.fontWeight = "bold";
-  question.style.color = "#205781";
-  question.style.display = "flex";
-  question.style.justifyContent = "space-between";
-  question.style.alignItems = "center";
-
-  const icon = document.createElement("span");
-  icon.className = "faq-icon";
-  icon.innerHTML = `<i class="fa-solid fa-plus" style="color: #124e78;"></i>`;
-  icon.style.cursor = "pointer";
-
-  icon.addEventListener("click", () => {
-  const isVisible = answer.style.display === "block";
-  answer.style.display = isVisible ? "none" : "block";
-  icon.innerHTML = isVisible
-    ? `<i class="fa-solid fa-plus" style="color: #124e78;"></i>`
-    : `<i class="fa-solid fa-minus" style="color: #124e78;"></i>`;
+  faqContainer.innerHTML += `
+    <div class="faq-item" style="margin-bottom:19px; padding:15px; background:#fff; border-radius:8px; box-shadow:0 2px 5px #ccc;">
+      <div class="faq-question" style="font-weight:bold; color:#205781; display:flex; justify-content:space-between; align-items:center;">
+        ${faq.question}
+        <span class="faq-icon" style="cursor:pointer;">
+          <i class="fa-solid fa-plus" style="color:#124e78;"></i>
+        </span>
+      </div>
+      <div class="faq-answer" style="display:none; margin-top:10px; color:#124e78;">
+        ${faq.answer}
+      </div>
+    </div>
+  `;
 });
 
-  const answer = document.createElement("div");
-  answer.className = "faq-answer";
-  answer.textContent = faq.answer;
-  answer.style.display = "none";
-  answer.style.marginTop = "10px";
-  answer.style.color = "#124e78";
-
-  question.appendChild(icon);
-  item.appendChild(question);
-  item.appendChild(answer);
-  faqContainer.appendChild(item);
+document.querySelectorAll(".faq-icon").forEach((icon, index) => {
+  icon.onclick = () => {
+    const answer = document.querySelectorAll(".faq-answer")[index];
+    const isVisible = answer.style.display === "block";
+    answer.style.display = isVisible ? "none" : "block";
+    icon.innerHTML = isVisible
+      ? `<i class="fa-solid fa-plus" style="color:#124e78;"></i>`
+      : `<i class="fa-solid fa-minus" style="color:#124e78;"></i>`;
+  };
 });
