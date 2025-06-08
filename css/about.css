@@ -262,12 +262,21 @@
     max-width: 90%;
     border-radius: 40px 0 40px 0;
   }
+
+  .button-tertiary {
+    font-size: 14px;
+    margin-left: 50% auto;
+    margin-right: 50% auto;
+  }
 }
 
 @media (max-width: 700px) {
   .faq-card-layout {
+    margin-top: 150px;
     flex-direction: column;
     text-align: center;
+    padding: 20px;
+    margin: 15px;
   }
 
   .faq-img-left {
@@ -277,5 +286,13 @@
 
   .faq-text-content {
     text-align: center;
+  }
+
+  .button-tertiary {
+    font-size: 14px;
+    margin: 0 auto; 
+    justify-content: center;
+    width: 150px;
+    display: flex;
   }
 }
