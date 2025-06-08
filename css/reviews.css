@@ -131,6 +131,7 @@ form label {
   border-radius: 20px;
   margin-bottom: 50px;
   background-color: #ffffff;
+  cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);}
 
 .profile-wrapper {
