@@ -110,7 +110,7 @@ form label {
 .sub-heading {
   text-align: center;
   color: #124e78;
-  font-size: 30px;
+  font-size: 36px;
   margin-top: 1%;
   margin-bottom: 30px;
 }
@@ -202,5 +202,9 @@ form label {
 @media (max-width: 1100px) {
   .filter-select-name {
     margin-left: 100px auto;
+    font-size: 12px;
+  }
+  #filter-select {
+    font-size: 12px;
   }
 }
