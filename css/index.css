@@ -50,7 +50,7 @@ width:600px; }
 
 }
 .card {
-    height:200px;
+    height:250px;
     width:350px;
     border:none;
     background:white;
@@ -59,22 +59,27 @@ width:600px; }
     margin-top:15px;
     margin-bottom:20px;
     box-shadow: 1px 5px 20px rgb(110, 14, 10, 0.2);
+    padding:20px;
+    
     
 }
 
 .container {
     display:flex;
     margin-left:20px;
-    margin-top:10px;
+    margin-top:25px;
     margin-bottom:10px;
     justify-content:center;
     flex-direction:row;
     flex-wrap: wrap;
+    align-items:center;
 }
 .card-headline {
     font-size:20px;
     font-weight: bold;
     text-align:center;
+    margin-top:15px;
+    margin-bottom:20px;
 }
 .main-line {
     text-align:center;
