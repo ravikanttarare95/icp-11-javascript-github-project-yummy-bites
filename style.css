@@ -291,6 +291,10 @@ nav {
   margin: 8px 0;
 }
 
+.list-footer:last-child {
+  display: none;
+}
+
 .list-footer a {
   text-decoration: none;
   display: block;
