@@ -101,7 +101,7 @@ form label {
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 16px;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-color: #d74e09;
   margin-bottom: 40px;
@@ -132,7 +132,8 @@ form label {
   margin-bottom: 50px;
   background-color: #ffffff;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);}
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
 .profile-wrapper {
   position: absolute;
@@ -172,12 +173,12 @@ form label {
     margin: 20px auto;
   }
 
-  .review-form-header{
+  .review-form-header {
     font-size: 14px;
   }
 
   .review-icon {
-  height: 30px;
+    height: 30px;
   }
 
   .stars-img {
@@ -185,7 +186,7 @@ form label {
     margin: 2px;
   }
 
-  #review-container{
+  #review-container {
     margin: 20px;
   }
 
@@ -201,14 +202,14 @@ form label {
 
 @media (max-width: 1100px) {
   .filter-select-name {
-    margin: 0 auto; 
+    margin: 0 auto;
     justify-content: center;
     width: 150px;
     display: flex;
   }
-  
+
   #filter-select {
-    margin: 0 auto; 
+    margin: 0 auto;
     justify-content: center;
     width: 150px;
     display: flex;
